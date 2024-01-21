@@ -1,0 +1,11 @@
+.Forecast .weather-forecast-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.Forecast .weather-forecast-day,
+.Forecast .weather-forecast-temp {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}

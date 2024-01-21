@@ -1,0 +1,27 @@
+.Search .search-input,
+.Search .submit {
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.Search .search-input {
+  color: #495057;
+  border-radius: 10px;
+  border: 1px solid #be3632;
+  width: 80%;
+}
+
+.Search .search-input:focus {
+  border: 1px solid #be3632;
+}
+
+.Search .submit {
+  color: white;
+  background-color: #be3632;
+  border: none;
+  width: 100px;
+}

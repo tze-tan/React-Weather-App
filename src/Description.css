@@ -1,0 +1,38 @@
+.Description .main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Description .temperature-container {
+  display: flex;
+}
+
+.Description .city {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.Description .temp-image {
+  margin: 0;
+  width: 100px;
+}
+
+.Description .current-temperature {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px;
+}
+
+.Description .temperature-celcius {
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+  margin-right: 60px;
+}
+
+.Description .humidity,
+.Description .windspeed {
+  font-weight: 600;
+  color: #be3632;
+}
