@@ -9,11 +9,11 @@ export default function Footer() {
         Tze Yi Tan
       </a>
       , open sourced on &nbsp;
-      <a href="https://github.com/tze-tan/New-Weather-App" target="_blank">
+      <a href="https://github.com/tze-tan/React-Weather-App" target="_blank">
         GitHub
       </a>
       , hosted on &nbsp;
-      <a href="https://tze-weather-app.netlify.app/" target="_blank">
+      <a href="https://tze-react-weather.netlify.app/" target="_blank">
         Netlify
       </a>
       .{" "}
