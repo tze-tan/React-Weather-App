@@ -25,11 +25,11 @@ export default function Description() {
         <p>
           <span id="dayintheweek">Tuesday</span>, <span id="time">23:33</span>,
           <span id="description"> overcast clouds</span> <br />
-          Humidity:
+          Humidity: {""}
           <span id="humidity" className="humidity">
             15%
           </span>{" "}
-          Windspeed:
+          Windspeed:{" "}
           <span id="windspeed" className="windspeed">
             65km/h
           </span>
