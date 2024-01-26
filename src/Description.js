@@ -13,6 +13,7 @@ export default function Description() {
             <img
               src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
               className="temp-image"
+              alt-text=""
             />
           </div>
           <div className="current-temperature" id="current-temperature">

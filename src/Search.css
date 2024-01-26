@@ -5,14 +5,13 @@
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 400;
-  line-height: 1;
 }
 
 .Search .search-input {
   color: #495057;
   border-radius: 10px;
   border: 1px solid #be3632;
-  width: 80%;
+  width: 100%;
 }
 
 .Search .search-input:focus {

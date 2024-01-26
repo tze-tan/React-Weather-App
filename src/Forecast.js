@@ -13,6 +13,7 @@ export default function Forecast() {
           <img
             src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png"
             class="weather-forecast-icon"
+            alt-text="forecast"
           />
           <div class="weather-forecast-temp">
             <strong>0°</strong> 5°
@@ -24,6 +25,7 @@ export default function Forecast() {
           <img
             src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png"
             class="weather-forecast-icon"
+            alt-text="forecast"
           />
           <div class="weather-forecast-temp">
             <strong>0°</strong> 5°
@@ -35,6 +37,7 @@ export default function Forecast() {
           <img
             src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png"
             class="weather-forecast-icon"
+            alt-text="forecast"
           />
           <div class="weather-forecast-temp">
             <strong>0°</strong> 5°
@@ -46,6 +49,7 @@ export default function Forecast() {
           <img
             src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png"
             class="weather-forecast-icon"
+            alt-text="forecast"
           />
           <div class="weather-forecast-temp">
             <strong>0°</strong> 5°
@@ -57,6 +61,7 @@ export default function Forecast() {
           <img
             src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png"
             class="weather-forecast-icon"
+            alt-text="forecast"
           />
           <div class="weather-forecast-temp">
             <strong>0°</strong> 5°
