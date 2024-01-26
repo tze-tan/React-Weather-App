@@ -1,5 +1,5 @@
-.Search .search-input,
-.Search .submit {
+.Weather .Weather-input,
+.Weather .submit {
   border-radius: 10px;
   padding: 16px;
   margin-top: 10px;
@@ -7,18 +7,18 @@
   font-weight: 400;
 }
 
-.Search .search-input {
+.Weather .Weather-input {
   color: #495057;
   border-radius: 10px;
   border: 1px solid #be3632;
   width: 100%;
 }
 
-.Search .search-input:focus {
+.Weather .Weather-input:focus {
   border: 1px solid #be3632;
 }
 
-.Search .submit {
+.Weather .submit {
   color: white;
   background-color: #be3632;
   border: none;

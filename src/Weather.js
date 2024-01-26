@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "./Search.css";
+import "./Weather.css";
 import axios from "axios";
 import Description from "./Description";
 import Forecast from "./Forecast";
 
-export default function Search(props) {
+export default function Weather(props) {
   let [ready, setReady] = useState(false);
   let [weatherData, setWeatherData] = useState({});
 
