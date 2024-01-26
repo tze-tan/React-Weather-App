@@ -1,4 +1,4 @@
-.Weather .Weather-input,
+.Weather .search-input,
 .Weather .submit {
   border-radius: 10px;
   padding: 16px;
@@ -7,14 +7,14 @@
   font-weight: 400;
 }
 
-.Weather .Weather-input {
+.Weather .search-input {
   color: #495057;
   border-radius: 10px;
   border: 1px solid #be3632;
   width: 100%;
 }
 
-.Weather .Weather-input:focus {
+.Weather .search-input:focus {
   border: 1px solid #be3632;
 }
 

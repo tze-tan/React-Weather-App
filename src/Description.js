@@ -11,8 +11,11 @@ export default function Description(props) {
         </h1>
         <div className="row">
           <p>
-            <FormattedDate date={props.data.date} /> |{" "}
-            <span className="text-capitalize"> {props.data.description} </span>
+            <FormattedDate date={props.data.date} /> | {""}
+            <span className="text-capitalize description-text">
+              {" "}
+              {props.data.description}{" "}
+            </span>
           </p>
         </div>
         <div className="row">

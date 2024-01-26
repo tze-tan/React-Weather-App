@@ -6,6 +6,7 @@ import Forecast from "./Forecast";
 
 export default function Weather(props) {
   let [ready, setReady] = useState(false);
+  let [city, setCity] = useState(props.defaultCity);
   let [weatherData, setWeatherData] = useState({});
 
   function handleResponse(response) {
@@ -21,10 +22,29 @@ export default function Weather(props) {
     });
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    search(city);
+  }
+
+  function updateCity(event) {
+    setCity(event.target.value);
+  }
+
+  function search() {
+    const apiKey = "5354b60afda2b7800186c06153932396";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
   if (ready) {
     return (
-      <div className="Search">
-        <form id="search-component" className="search-component">
+      <div className="Weather">
+        <form
+          onSubmit={handleSubmit}
+          id="search-component"
+          className="search-component"
+        >
           <div className="row">
             <div className="col-10">
               <input
@@ -32,6 +52,7 @@ export default function Weather(props) {
                 className="search-input"
                 placeholder="Enter a city"
                 required
+                onChange={updateCity}
               />
             </div>
             <div className="col-2">
@@ -44,8 +65,6 @@ export default function Weather(props) {
       </div>
     );
   } else {
-    const apiKey = "5354b60afda2b7800186c06153932396";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
+    search(city);
   }
 }
