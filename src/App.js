@@ -17,9 +17,7 @@ export default function App() {
       }}
     >
       <div className="inner-container">
-        <Search />
-        <Description />
-        <Forecast />
+        <Search defaultCity="Munich" />
         <Footer />
       </div>
     </div>

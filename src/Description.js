@@ -1,15 +1,19 @@
 import React from "react";
 import "./Description.css";
+import FormattedDate from "./FormattedDate";
 
-export default function Description() {
+export default function Description(props) {
   return (
     <div className="Description">
       <div className="main-container">
         <h1 id="city" className="city">
-          Munich
+          {props.data.city}
         </h1>
         <div className="row">
-          <p>Tuesday, 23:33</p>
+          <p>
+            <FormattedDate date={props.data.date} /> |{" "}
+            <span className="text-capitalize"> {props.data.description} </span>
+          </p>
         </div>
         <div className="row">
           <div className="col-6">
@@ -20,19 +24,17 @@ export default function Description() {
             />
 
             <span className="current-temperature" id="current-temperature">
-              24
+              {props.data.currentTemperature}
             </span>
             <span className="temperature-celcius">°C</span>
           </div>
 
           <div className="col-6">
             <ul>
-              <li>Description: {""} Overcast clouds</li>
               <li>
-                Humidity: {""}
-                15%
+                Humidity: {""} {props.data.humidity}%
               </li>
-              <li>Windspeed: 65km/h</li>
+              <li>Windspeed: {props.data.windspeed}km/h</li>
             </ul>
           </div>
         </div>

@@ -13,7 +13,7 @@
 }
 
 .Description .temp-image {
-  margin: 0;
+  margin: 0px;
   width: 100px;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .Description ul {
-  margin: 0;
+  margin: 16px 0;
   padding: 0;
 }
 
