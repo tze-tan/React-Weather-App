@@ -1,6 +1,7 @@
 import React from "react";
 import "./Description.css";
 import FormattedDate from "./FormattedDate";
+import WeatherConversion from "./WeatherConversion";
 
 export default function Description(props) {
   return (
@@ -25,11 +26,9 @@ export default function Description(props) {
               className="temp-image"
               alt-text="temperature"
             />
-
-            <span className="current-temperature" id="current-temperature">
-              {props.data.currentTemperature}
-            </span>
-            <span className="temperature-celcius">°C</span>
+            <WeatherConversion
+              celciusTemperature={props.data.currentTemperature}
+            />{" "}
           </div>
 
           <div className="col-6">

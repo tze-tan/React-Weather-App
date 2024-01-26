@@ -21,12 +21,13 @@
   width: 100px;
 }
 
-.Description .current-temperature {
+.WeatherConversion .current-temperature {
   font-size: 40px;
   font-weight: bold;
+  margin-right: 5px;
 }
 
-.Description .temperature-celcius {
+.WeatherConversion .temperature-celcius {
   margin-top: 40px;
   margin-right: 60px;
   position: relative;
