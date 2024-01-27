@@ -1,11 +1,12 @@
 .Footer {
   margin-top: 70px;
+  margin-left: 30px;
   font-size: 12px;
   text-align: left;
   font-family: sans-serif;
-  color: rgba(175, 171, 171, 0.656);
+  color: rgba(78, 74, 74, 0.656);
 }
 
 .Footer a {
-  color: #be3632;
+  color: rgb(165, 126, 218);
 }

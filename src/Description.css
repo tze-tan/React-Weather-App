@@ -5,6 +5,7 @@
 .Description .main-container {
   padding: 0;
   margin-top: 10px;
+  margin-left: 34px;
 }
 
 .Description .city {
@@ -13,7 +14,7 @@
 }
 
 .Description .description-text {
-  color: #be3632;
+  color: rgb(152, 106, 217);
 }
 
 .Description .temp-image {
@@ -31,7 +32,6 @@
 
 .WeatherConversion .temperature-celcius {
   margin-top: 40px;
-  margin-right: 60px;
   position: relative;
   top: -12px;
 }

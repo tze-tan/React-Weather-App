@@ -10,17 +10,18 @@
 .Weather .search-input {
   color: #495057;
   border-radius: 10px;
-  border: 1px solid #be3632;
-  width: 100%;
+  border: 1px solid rgb(165, 126, 218);
+  width: 95%;
+  margin-left: 30px;
 }
 
 .Weather .search-input:focus {
-  border: 1px solid #be3632;
+  border: 1px solid rgb(165, 126, 218);
 }
 
 .Weather .submit {
   color: white;
-  background-color: #be3632;
+  background-color: rgb(165, 126, 218);
   border: none;
   width: 100px;
 }

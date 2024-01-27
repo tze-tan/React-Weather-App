@@ -7,9 +7,7 @@ export default function Description(props) {
   return (
     <div className="Description">
       <div className="main-container">
-        <h1 id="city" className="city">
-          {props.data.city}
-        </h1>
+        <h1 className="city">{props.data.city}</h1>
         <div className="row">
           <p>
             <FormattedDate date={props.data.date} /> | {""}
@@ -21,14 +19,14 @@ export default function Description(props) {
         </div>
         <div className="row">
           <div className="col-6">
+            <WeatherConversion
+              celciusTemperature={props.data.currentTemperature}
+            />
             <img
               src={props.data.iconUrl}
               className="temp-image"
               alt-text={props.data.description}
             />
-            <WeatherConversion
-              celciusTemperature={props.data.currentTemperature}
-            />{" "}
           </div>
 
           <div className="col-6">

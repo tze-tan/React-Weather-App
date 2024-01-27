@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="Footer">
       This project was coded by &nbsp;
       <a
-        href="https://github.com/tze-tan"
+        href="https://www.linkedin.com/in/tze-yi-tan/"
         target="_blank"
         rel="noopener noreferrer"
       >

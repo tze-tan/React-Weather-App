@@ -4,12 +4,17 @@
 
 body {
   margin: 0;
+  background: linear-gradient(
+    -20deg,
+    rgb(233, 222, 250) 0%,
+    rgb(251, 252, 219) 100%
+  );
 }
 
 .App .inner-container {
-  width: 60%;
-  background: rgba(255, 255, 255, 0.95);
-  padding: 30px 40px;
+  width: 70%;
+  background: rgba(217, 214, 214, 0.821);
+  padding: 30px 15px;
   border: none;
   border-radius: 30px;
   margin: 0 auto;

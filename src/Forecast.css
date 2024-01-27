@@ -1,8 +1,12 @@
 .Forecast {
   text-align: center;
   font-family: "Poppins", sans-serif;
+  margin-top: 30px;
 }
 
+.Forecast .col {
+  padding: 0;
+}
 .Forecast .weather-forecast-min {
   margin-left: 6px;
   opacity: 70%;

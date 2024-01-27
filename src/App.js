@@ -9,8 +9,6 @@ export default function App() {
     <div
       className="App"
       style={{
-        backgroundImage: `url(${background})`,
-        backgroundSize: "cover",
         minHeight: "100vh",
       }}
     >
