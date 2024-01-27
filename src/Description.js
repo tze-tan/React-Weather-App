@@ -18,7 +18,7 @@ export default function Description(props) {
           </p>
         </div>
         <div className="row">
-          <div className="col-6">
+          <div className="col-md-6">
             <WeatherConversion
               celciusTemperature={props.data.currentTemperature}
             />
@@ -29,7 +29,7 @@ export default function Description(props) {
             />
           </div>
 
-          <div className="col-6">
+          <div className="col-md-6">
             <ul>
               <li>
                 Humidity: {""} {props.data.humidity}%

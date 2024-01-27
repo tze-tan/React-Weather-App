@@ -11,7 +11,7 @@
   color: #495057;
   border-radius: 10px;
   border: 1px solid rgb(165, 126, 218);
-  width: 95%;
+  width: 100%;
   margin-left: 30px;
 }
 
@@ -24,4 +24,16 @@
   background-color: rgb(165, 126, 218);
   border: none;
   width: 100px;
+  margin-left: 30px;
+}
+
+@media (max-width: 600px) {
+  .Weather .search-input {
+    width: 95%;
+    margin-left: 10px;
+  }
+
+  .Weather .submit {
+    margin-left: 10px;
+  }
 }

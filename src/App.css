@@ -12,7 +12,7 @@ body {
 }
 
 .App .inner-container {
-  width: 70%;
+  width: 50%;
   background: rgba(217, 214, 214, 0.821);
   padding: 30px 15px;
   border: none;
@@ -23,4 +23,19 @@ body {
 
 .App p {
   font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 600px) {
+  .App .inner-container {
+    width: 100%;
+    background: linear-gradient(
+      -20deg,
+      rgb(233, 222, 250) 0%,
+      rgb(251, 252, 219) 100%
+    );
+  }
+
+  .App {
+    padding-top: 20px;
+  }
 }

@@ -44,3 +44,13 @@
 .Description li {
   list-style-type: none;
 }
+
+@media (max-width: 600px) {
+  .Description .main-container {
+    margin-left: 10px;
+  }
+
+  .Description .city {
+    font-size: 30px;
+  }
+}
