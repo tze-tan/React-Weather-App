@@ -31,6 +31,8 @@ export default function Forecast(props) {
                   <ForecastFormatted data={dailyForecast} />
                 </div>
               );
+            } else {
+              return null;
             }
           })}
         </div>

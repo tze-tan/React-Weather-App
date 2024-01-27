@@ -29,7 +29,7 @@ export default function ForecastFormatted(props) {
       />
       <div className="weather-forecast-temp">
         <span className="weather-forecast-max">{maxTemp()}</span>
-        <span className="weather-forecast-min"> {minTemp()}</span>
+        <span className="weather-forecast-min">{minTemp()}</span>
       </div>
     </div>
   );
