@@ -24,7 +24,7 @@ export default function Description(props) {
             <img
               src={props.data.iconUrl}
               className="temp-image"
-              alt-text="temperature"
+              alt-text={props.data.description}
             />
             <WeatherConversion
               celciusTemperature={props.data.currentTemperature}

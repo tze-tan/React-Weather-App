@@ -2,22 +2,22 @@ import React from "react";
 
 export default function ForecastFormatted(props) {
   function minTemp() {
-    let minTemp = Math.round(props.data.daily[0].temp.min);
+    let minTemp = Math.round(props.data.temp.min);
     return `${minTemp}°`;
   }
 
   function maxTemp() {
-    let maxTemp = Math.round(props.data.daily[0].temp.max);
+    let maxTemp = Math.round(props.data.temp.max);
     return `${maxTemp}°`;
   }
 
   function parseTime() {
-    let date = new Date(props.data.daily[0].dt * 1000);
+    let date = new Date(props.data.dt * 1000);
     let friendlyDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     return friendlyDays[date.getDay()];
   }
 
-  let iconUrl = `https://openweathermap.org/img/wn/${props.data.daily[0].weather[0].icon}@2x.png`;
+  let iconUrl = `https://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`;
 
   return (
     <div>
@@ -25,7 +25,7 @@ export default function ForecastFormatted(props) {
       <img
         src={iconUrl}
         className="weather-forecast-icon"
-        alt-text="forecast"
+        alt-text={props.data.weather[0].description}
       />
       <div className="weather-forecast-temp">
         <span className="weather-forecast-max">{maxTemp()}</span>

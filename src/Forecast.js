@@ -7,20 +7,27 @@ export default function Forecast(props) {
   let [forecastLoaded, setForecastLoaded] = useState(false);
   let [forecastData, setForecastData] = useState(null);
   function handleForecast(response) {
-    console.log(response.data);
-    setForecastData(response.data);
+    /* this was changed from response.data to response.data.daily as otherwise the loop function below won't work 
+    (object of objects, response.data.daily is an array of objects), and we don't need the hourly data etc */
+    setForecastData(response.data.daily);
     setForecastLoaded(true);
   }
 
+  /* the structure of the API can be seen here: 
+  https://api.openweathermap.org/data/2.5/onecall?lat=50&lon=50&appid=eae061c95483dd066657bfc7525418ed&units=metric */
   if (forecastLoaded) {
-    let iconUrl = `https://openweathermap.org/img/wn/${forecastData.daily[0].weather[0].icon}@2x.png`;
-
     return (
       <div className="Forecast">
         <div className="row">
-          <div className="col">
-            <ForecastFormatted data={forecastData} />
-          </div>
+          {forecastData.map(function (dailyForecast, index) {
+            if (index < 6) {
+              return (
+                <div className="col" key={index}>
+                  <ForecastFormatted data={dailyForecast} />
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     );
