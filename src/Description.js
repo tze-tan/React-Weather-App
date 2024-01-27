@@ -22,7 +22,7 @@ export default function Description(props) {
         <div className="row">
           <div className="col-6">
             <img
-              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
+              src={props.data.iconUrl}
               className="temp-image"
               alt-text="temperature"
             />

@@ -18,20 +18,22 @@
 
 .Description .temp-image {
   margin: 0px;
-  width: 100px;
+  width: 90px;
 }
 
 .WeatherConversion .current-temperature {
-  font-size: 40px;
+  font-size: 44px;
   font-weight: bold;
   margin-right: 5px;
+  position: relative;
+  top: 10px;
 }
 
 .WeatherConversion .temperature-celcius {
   margin-top: 40px;
   margin-right: 60px;
   position: relative;
-  top: -20px;
+  top: -12px;
 }
 
 .Description ul {
